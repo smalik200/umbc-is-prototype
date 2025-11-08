@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UMBC IS — Contact Us (Prototype)</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">UMBC • Information Systems</div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="undergraduate.html">Undergraduate Program (IS)</a>
+      <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Contact the IS Department</h1>
+      <div class="grid grid-2">
+        <div class="card">
+          <h2>Department Office</h2>
+          <p>
+            University of Maryland, Baltimore County (UMBC)<br />
+            Information Systems Department<br />
+            1000 Hilltop Circle, Baltimore, MD 21250
+          </p>
+          <p>
+            Email: <a href="mailto:isdept@example.edu">isdept@example.edu</a><br />
+            Phone: (410) 455-XXXX
+          </p>
+        </div>
+        <div class="card">
+          <h2>Message Us</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@umbc.edu" />
+            </div>
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option>Advising</option>
+                <option>Program Information</option>
+                <option>Events</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+            </div>
+            <button class="button" type="button" aria-disabled="true">Send (Prototype)</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© UMBC IS • Prototype for Lab 4</footer>
+</body>
+</html>
